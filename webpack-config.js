@@ -3,7 +3,10 @@ module.exports = {
     entry: "./app.tsx",
     mode: "development",
     output: {
-        filename: "./app-bundle.js"
+        filename: "./app-bundle.js",
+        /* removes the webpack: prefix */
+        devtoolModuleFilenameTemplate: '[resource-path]'  
+        /* removes the webpack: prefix */
     },
     resolve: {
         extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.jsx', '.tsx']
