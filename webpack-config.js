@@ -3,7 +3,7 @@ module.exports = {
     entry: "./app.tsx",
     mode: "development",
     output: {
-        filename: "./app-bundle.js",
+        filename: "./app-bundle.js", // Adding [name].[hash] allows for app versioning.
         /* removes the webpack: prefix */
         devtoolModuleFilenameTemplate: '[resource-path]'  
         /* removes the webpack: prefix */
